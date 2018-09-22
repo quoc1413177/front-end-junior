@@ -1,0 +1,25 @@
+@keyframes fadeIn{
+    0%{
+        transform: translateY(-150%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateY(0%);
+        opacity: 1;
+        }
+}
+@keyframes fadeInUp{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateY(0);
+        opacity: 1;
+        }
+}
+
+@keyframes fadeIn_appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }

@@ -1,0 +1,63 @@
+@mixin text($color, $fs, $fw){
+    color:$color;
+    font-size:$fs;
+    font-weight:$fw;
+}
+
+@mixin button($color, $bg-color, $border-rad,
+$color-hover,$bg-hover){
+    color: $color;
+    background-color: $bg-color;
+    border-radius: $border-rad;
+    outline:none;
+    border:none;
+    &:hover{
+        color:$color-hover;
+        background-color: $bg-hover;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.5s;
+    } 
+}
+@mixin sticky($top, $font)
+{
+    top: $top;
+    font-size: $font;
+    position: fixed;
+    right:3px;
+    z-index: 1;
+    width:45px;
+    height: 45px;
+    overflow: hidden;
+    background-color: rgb(31,31,31);
+    // Nhớ kiển tra vị trí đặt transition
+    transition: width 1s ease;
+    &:hover{
+        width:200px;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        i{
+            padding-right:10px;
+            &:hover{
+                color:$color-blue;
+                transition:0.5s;
+            }
+        }
+        span{
+            font-size:20px;
+            &:hover{
+                color:$color-blue;
+                transition:0.5s;
+            }
+        }
+    }
+    i{
+        color:white;
+        &:hover{
+            color:$color-blue;
+            transition:2s;
+        }
+    }
+}

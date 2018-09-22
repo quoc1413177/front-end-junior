@@ -1,0 +1,67 @@
+.product{
+    background-color: black;
+    text-align:center;
+    .product__nav{
+        width:fit-content;
+        margin: 0 auto;
+        padding-top:$pd-4;
+        .nav-link{
+            background: linear-gradient(#303030,#202020);
+            border: 1px outset #202020;
+            color:grey;
+            padding:5px 20px;
+            font-size: 14px;
+            &:hover{
+                color: $color-blue;
+                transition: all 0.5s;
+            }
+        }
+        .active{
+            color:$color-blue;
+            &:hover{
+                color: white;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+.itemP,.itemN{
+    position:relative;
+    &:hover{  //đang hover cho item
+        .overlay{
+            background-color: $color-black-dark;
+            cursor: pointer;
+            p{
+                padding-bottom:$pd-0 * 10;
+            }
+        }
+    }
+    .img-fluid{
+        width:100%;
+    }
+    .overlay{
+        background-color: $color-black-light;
+        text-align: left;
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        h1{
+            @include text($color-white, 25px, $fw-normal);
+        }
+        p{
+            @include text($color-white, $fs-1, $fw-normal);
+            transition: all 1s; 
+        }
+    }
+    .fixheight
+    {
+        height: 240px;
+    }
+}
+.itemN{
+    animation-duration: 2.5s;
+   // animation: fadeInUp 3s forwards linear;
+}
+.itemP{
+    animation-duration: 2.5s;
+}

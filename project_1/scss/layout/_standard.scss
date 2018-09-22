@@ -1,0 +1,35 @@
+.standard{
+    padding:0px $pd-4;
+    background-color: black;
+    .standard_item{
+        p{  
+            font-family:CorporateSRegular,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: rgba(255, 255, 255, 0.89);
+            font-size:14px;
+            margin:0;
+            sup{
+                vertical-align: baseline;
+                font-size: 11px;
+                position: relative;
+                margin-right:5px;
+            }
+        }
+        .eco_standard{
+            display: inline-block;
+            font-family:CorporateSRegular,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: rgba(255, 255, 255, 0.89);
+            font-size:15px;
+            margin-right:35px;
+            margin-bottom:10px;
+            p{
+                i{
+                    vertical-align: sub;
+                    font-size:18px;
+                    margin-right:5px;
+                }
+            }
+            
+        }
+    }
+   
+}

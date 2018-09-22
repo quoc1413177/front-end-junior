@@ -1,0 +1,87 @@
+.navbar--dark{
+    background-color: $color-black;
+    
+    //navbar-brand
+    .navbar-brand{
+        position: relative;
+        color:white;
+        height:130px;
+        margin: 0;
+    img{
+        width:75px;
+        margin-right:60px;
+        margin-top:20%;
+        margin-left:45%;
+    }
+    span{
+        position: absolute;
+        color:white;
+        margin-top:48%;
+        font-family: initial;
+        font-size: 23px;
+        //border-right: 1px solid;
+        //padding-right:$pd-1;
+    }
+    }
+    //NAVBAR-ITEM
+    .nav-item{
+        margin-left:15px;
+        .nav-link{
+            color:gray;
+            font-size: 17px;
+            font-family: Arial;
+            text-align:center;
+            &:hover{ //đại diện cho class chính nó
+                color:$color-blue;
+                transition:0.5s;
+            }
+            p{
+                margin:0;
+            }   
+        }
+    }
+    .sub-active{
+        border:0.5px solid grey;
+        height:30px;
+        width:1px;
+        margin-top: 15px;
+        margin-left:10px;
+    }
+    //FIXING THE RIGHT CONTENT PADDING
+    .navbar-nav{
+        padding-top: 25px;
+        padding-right: $pd-3;
+    }
+    //NAVBAR-TOP
+    .nav-top{
+        position: absolute;
+        right: 50px;
+        top:15px;
+        span{
+            margin-left: 20px;
+            a{
+                color: grey;
+                text-decoration:none;
+                &:hover{
+                    cursor: pointer;
+                    color:$color-blue;
+                }
+            }
+        }
+        a{
+            color: grey;
+            text-decoration:none;
+            &:hover{
+                cursor: pointer;
+                color:$color-blue;
+            }
+        }
+        >a::before{
+        content: "i";
+        border: 1px solid grey; 
+        padding: 2px 6px; 
+        margin-right:5px;
+        font-size: 10px; 
+        }
+    }
+}

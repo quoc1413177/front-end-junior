@@ -1,0 +1,13 @@
+.carousel-control-prev,.carousel-control-next{
+    width:10%;
+    opacity:1;
+    font-size: 25px;
+}
+// Chỉnh thanh slidebar từ dẹt sang tròn
+.carousel-indicators{
+    li{
+        width:10px;
+        height:10px;
+        border-radius:50%;
+    }
+}

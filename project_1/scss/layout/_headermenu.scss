@@ -1,0 +1,16 @@
+.nav.menu{
+    height:85px;
+    background: #1d1d1d;
+    //align item in vertical
+    align-items:center;       
+    .nav-item{
+        a{
+            text-decoration: none;
+            color:$color-grey;
+            &:hover{
+                color:$color-blue;
+                transition: 0.5s;
+            }
+        }
+    }
+}

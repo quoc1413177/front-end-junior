@@ -1,0 +1,27 @@
+
+.mini_header{
+    @include text(white,30px,bold);
+    background-color: black;
+    font-family:CorporateACondensedRegular,Times New Roman,Arial,serif;
+    padding-left:55px;
+}
+.mini-carousel{
+    border-top: 1px solid gray;
+    background-color: black; 
+    .owl-theme{
+        .item{
+            width:140px;
+            height:120px;
+            .type{
+            padding-top:15px;
+            width:146px;
+            height:26px;
+            margin:0;
+            @include text(white,22px,lighter);
+            font-family:CorporateACondensedRegular,Times New Roman,Arial,serif;
+            text-align: center;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.welcome{
+    padding: $pd-3 0;
+    animation: fadeIn_appear 3s forwards;
+    .welcome__title{
+        @include text($color-black, $fs-4, $fw-normal);
+    }
+    p{
+        @include text($color-grey, $fs-1, $fw-normal);
+        margin-bottom: $mg-4;
+    }
+    .line{
+        width:6%;
+        height:2px;
+        background-color: black;
+        margin: $mg-4 0;
+    }
+}

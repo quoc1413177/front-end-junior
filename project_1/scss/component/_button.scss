@@ -1,0 +1,64 @@
+.carousel-caption{
+    .btn--black{
+        @include button(white,$color-dark, 1px,
+                        $color-grey,$color-black-dark);
+        padding: 10px 15px;
+        span{
+            padding-right: 5px;
+        }
+        }
+    }
+.btn_blue{
+    @include button($color-white, $color-blue, 40px,
+                    $color-black,$color-white);
+        padding: 5px 20px;;
+        font-size: 20px;
+}
+.btn_trans{
+    @include button($color-white, transparent, 40px,
+                    $color-black,$color-white);
+        padding: 5px 20px;;
+        font-size: 20px;
+        border: 1px solid white;
+}
+.btn__search{
+    border:none;
+}
+.btn__formsearch{
+    @include button($color-white,black,none,
+                    $color-blue,$color-black);
+    font-size: 1.5rem;
+    padding:7px 30px;
+}  
+//--------Load More Button------------
+#loadMore {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    a {
+        position:relative;
+        background:rgb(53, 53,53);
+        color:rgb(177,177,177);
+        letter-spacing: 2px;
+        display: inline-block;
+        padding: 10px 30px;
+        transition: all 0.4s ease-out;
+        -webkit-font-smoothing: antialiased;
+        p{
+            margin:0;
+            margin-left:10px;
+            i{
+                position: absolute;
+                top:16%;
+                left:5%;
+                font-size:30px;
+            }
+        }
+        &:hover {
+            color: white;
+            text-decoration-line: none;
+        }
+       
+    }
+}

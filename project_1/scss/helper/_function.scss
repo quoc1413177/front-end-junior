@@ -1,0 +1,8 @@
+@for $number from 0 through 10{
+    .delay-#{$number}{
+        animation-delay: 0.5s * $number!important;
+    }
+}
+
+
+

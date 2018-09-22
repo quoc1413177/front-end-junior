@@ -1,0 +1,64 @@
+.carousel-item{
+    height:550px;
+    img{ 
+        height:100%;
+        width:100%;
+    }
+}
+
+.carousel-caption{
+    bottom:unset;
+    right:unset;
+    top:50px;
+    left:7%;
+    text-align:left;
+    width:530px;
+    animation: fadeIn 2.5s forwards linear; 
+    .line{
+        width:14%;
+        height:2px;
+        background-color: white;
+        margin-bottom: $mg-2;
+    }
+    h1{
+        @include text(white,35px,$fw-normal);
+        margin-bottom: $mg-3;
+        span i{
+            margin-right: 5px;
+        }
+    }
+}
+.carousel-caption.active{
+    .line{
+        background-color: black;
+    }
+    h1{
+        @include text(black,35px,$fw-normal);
+    }
+}
+.carousel{
+    a >i{
+        font-size:55px;
+        &:hover{
+            color:gray;
+        }
+    }
+    .container
+    {   
+        .input-group
+        {
+        margin-top:-70px;
+        height:50px;
+        padding:0;
+        }
+        // input[type=text]:focus{
+        //     border:3px solid #555;
+        // }
+        .form-control
+            {
+            background-color: rgba(216, 216, 216, 0.788);
+            font-size:20px;
+            border: 2px solid black;
+            }
+    }
+}

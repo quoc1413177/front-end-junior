@@ -1,0 +1,40 @@
+
+  /* Style the icon bar links */
+
+.sticky__bar1
+{
+    @include sticky(34%,25px);
+    padding-top: 5px;
+    padding-left:10px;
+}
+.sticky__bar2
+{
+    @include sticky(41%,25px);
+    padding-top: 5px;
+    padding-left:10px;
+}
+.sticky__bar3
+{
+    @include sticky(48%,25px);
+    padding-top: 6px;
+    padding-left:15px;
+    
+}
+.sticky__bar4
+{
+    @include sticky(55%,25px);
+    padding-top: 5px;
+    padding-left:12px;
+    &:hover{
+        width:220px;
+    }
+}
+#myBtn {
+    @include sticky(none,25px);
+    bottom: 1%!important;
+    padding-top: 4px;
+    padding-left:14px;
+    &:hover{
+        width:45px;
+    }
+}
