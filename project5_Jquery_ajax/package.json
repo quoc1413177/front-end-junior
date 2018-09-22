@@ -1,0 +1,19 @@
+{
+  "name": "project5_jquery_ajax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"lite-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
